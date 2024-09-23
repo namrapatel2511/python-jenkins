@@ -1,1 +1,1 @@
-print (" this sample github jenkins file commit 2 ")
+print (" this sample github scm polling testing ")
