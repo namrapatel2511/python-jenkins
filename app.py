@@ -10,7 +10,7 @@ html_code = '''
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask with HTML</title>
+    <title>Deploy app on amazon ec-2 using jenkins and github webhooks</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
         h1 { color: #333; }
