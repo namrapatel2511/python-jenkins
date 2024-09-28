@@ -1,6 +1,43 @@
-print (" this sample github scm polling testing  ") 
-print (" llearning github -webhooks in jenkins ")
+from flask import Flask, render_template_string
 
-print (" testing github webhooks ")
+# Create a Flask application
+app = Flask(__name__)
 
-print("github ec2 jenkins ")
+# HTML content embedded in Python using render_template_string
+html_code = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask with HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        h1 { color: #333; }
+        button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flask with HTML!</h1>
+    <p>Click the button to see a message:</p>
+    <button onclick="displayMessage()">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        function displayMessage() {
+            document.getElementById("message").innerHTML = "Hello, World!";
+        }
+    </script>
+</body>
+</html>
+'''
+
+# Route for the home page
+@app.route('/')
+def home():
+    return render_template_string(html_code)
+
+# Run the application
+if __name__ == '__main__':
+    app.run(debug=True)
