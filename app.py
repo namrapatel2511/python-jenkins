@@ -19,7 +19,7 @@ html_code = '''
     </style>
 </head>
 <body>
-    <h1>testing the jenkins using webhooks</h1>
+    <h1>Configure github webhooks using jenkins</h1>
     <p>Click the button to see a message:</p>
     <button onclick="displayMessage()">Click Me</button>
     <p id="message"></p>
